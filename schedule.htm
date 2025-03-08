@@ -8,6 +8,33 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta name=Generator content="Microsoft Excel 15">
 <link rel=File-List href="schedule.fld/filelist.xml">
 <style id="schedule_27479_Styles">
+ .table-container {
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+  max-height: 500px; /* Adjust this */
+ }
+
+ table {
+  border-collapse: collapse;
+  width: 100%;
+ }
+
+ th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  background: white;
+ }
+
+ /* Freeze the first column */
+ tbody td:first-child, thead th:first-child {
+  position: sticky;
+  left: 0;
+  background-color: white;
+  z-index: 2;
+  box-shadow: 2px 0px 5px rgba(0,0,0,0.1); /* Optional: Adds a shadow effect */
+ }
+
 <!--table
 	{mso-displayed-decimal-separator:"\,";
 	mso-displayed-thousand-separator:"\.";}
@@ -185,7 +212,7 @@ tags will be replaced.-->
 <!----------------------------->
 
 <div id="schedule_27479" align=center x:publishsource="Excel">
-
+<div class="table-container">
 <table border=0 cellpadding=0 cellspacing=0 width=4245 style='border-collapse:
  collapse;table-layout:fixed;width:3176pt'>
  <col class=xl65 width=87 style='width:65pt'>
@@ -861,6 +888,7 @@ tags will be replaced.-->
  </tr>
  <![endif]>
 </table>
+</div>
 
 </div>
 
